@@ -1,0 +1,10 @@
+// Name of the package
+import testpackage.*;
+
+// Class to which the package belongs
+class a11{
+	public static void main(String arg[]){
+		Add a = new Add();
+		a.display();
+	}
+}

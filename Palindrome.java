@@ -1,0 +1,26 @@
+import java.io.*;
+
+class Palindrome{
+	public static void main(String args[])throws Exception{
+		System.out.println("Enter String1 :"); 
+		DataInputStream dis=new DataInputStream(System.in);
+		String s1=dis.readLine();
+		int l=s1.length();
+		int i=0;
+		int j=l-1;
+		int k=1;
+		while((i<=j)&&(k==1)){
+			if(s1.charAt(i)==s1.charAt(j)){
+				i++;
+				j--;
+			}
+			else{
+				k=0;
+			}
+		}
+		if(k==1)
+			System.out.println("String is a Palindrome.");
+		else
+			System.out.println("String is not a Palindrome.");
+	}
+}

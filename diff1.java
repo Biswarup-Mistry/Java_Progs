@@ -1,0 +1,12 @@
+class diff1{
+	public static void main(String args[]){
+		String s1,s2,s3;
+		s1="Hello";
+		s2="Hello";
+		s3="Hi";
+		System.out.println("s1 : "+s1+"\ns2 : "+s2+"\ns3 : "+s3);
+		System.out.println("s1 and s2 is : "+s1.equals(s2)); 
+		System.out.println("s2 and s3 is : "+s2.equals(s3)); 
+		System.out.println("s2 and s3 is (int == operator): "+(s2==s3)); 		
+	}
+}
